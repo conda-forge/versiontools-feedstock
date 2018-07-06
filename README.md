@@ -14,14 +14,15 @@ Summary: Smart replacement for plain tuple used in __version__
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/versiontools-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/versiontools-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/versiontools-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/versiontools-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/versiontools-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/versiontools-feedstock/branch/master)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/versiontools-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/versiontools-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/versiontools/badges/version.svg)](https://anaconda.org/conda-forge/versiontools)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/versiontools/badges/downloads.svg)](https://anaconda.org/conda-forge/versiontools)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-versiontools-green.svg)](https://anaconda.org/conda-forge/versiontools) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/versiontools.svg)](https://anaconda.org/conda-forge/versiontools) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/versiontools.svg)](https://anaconda.org/conda-forge/versiontools) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/versiontools.svg)](https://anaconda.org/conda-forge/versiontools) |
 
 Installing versiontools
 =======================
@@ -66,6 +67,7 @@ To manage the continuous integration and simplify feedstock maintenance
 Using the ``conda-forge.yml`` within this repository, it is possible to re-render all of
 this feedstock's supporting files (e.g. the CI configuration files) with ``conda smithy rerender``.
 
+For more information please check the [conda-forge documentation](https://conda-forge.org/docs/).
 
 Terminology
 ===========
