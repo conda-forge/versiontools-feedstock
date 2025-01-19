@@ -1,6 +1,5 @@
 {% set name = "versiontools" %}
 {% set version = "1.9.1" %}
-{% set hash_type = "sha256" %}
 {% set hash_val = "a969332887a18a9c98b0df0ea4d4ca75972f24ca94f06fb87d591377e83414f6" %}
 
 package:
@@ -9,23 +8,25 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  {{ hash_type }}: {{ hash_val }}
+  sha256: {{ hash_val }}
 
 build:
   preserve_egg_dir: True
-  number: 0
+  number: 1
   noarch: python
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
 
 requirements:
   host:
-    - python
+    - python {{ python_min }}
     - pip
 
   run:
-    - python
+    - python >={{ python_min }}
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - versiontools
     - versiontools.setuptools_hooks
